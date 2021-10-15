@@ -1,0 +1,30 @@
+[
+	{
+		"name": "default",
+		"type": "postgres",
+		"host": "localhost",
+		"port": 5432,
+		"username": "postgres",
+		"database": "rj-local",
+		"debug": false,
+		"synchronize": true,
+		"logging": false,
+		"entities": [
+			"entity/*.*"
+		]
+	},
+	{
+		"name": "chat",
+		"type": "postgres",
+		"host": "localhost",
+		"port": 5432,
+		"username": "postgres",
+		"database": "rj-chat",
+		"debug": false,
+		"synchronize": true,
+		"logging": false,
+		"entities": [
+			"chatEntity/*.*"
+		]
+	}
+]
