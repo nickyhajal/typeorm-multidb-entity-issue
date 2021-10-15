@@ -7,7 +7,7 @@ import {
   Entity,
 } from 'typeorm'
 
-@Entity()
+@Entity({synchronize: false})
 export class Base extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
   id: string
