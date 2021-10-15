@@ -1,10 +1,10 @@
 import 'reflect-metadata'
-import {createConnections, createConnection} from 'typeorm'
+import {createConnections} from 'typeorm'
 import {User} from './entity/User'
 import {Chat} from './entitydb2/Chat'
 
 async function init() {
-  const connection = await createConnection()
+  const connections = await createConnections()
 
   await User.create({
     firstName: 'John',

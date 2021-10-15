@@ -7,7 +7,7 @@ import {
   Entity,
 } from 'typeorm'
 
-@Entity({synchronize: false})
+@Entity({synchronize: false, database: 'chat'})
 export class Db2Base extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
   id: string
