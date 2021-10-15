@@ -24,7 +24,7 @@
 		"synchronize": true,
 		"logging": false,
 		"entities": [
-			"chatEntity/*.*"
+			"entitydb2/*.*"
 		]
 	}
 ]
